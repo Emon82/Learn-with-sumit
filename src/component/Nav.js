@@ -1,7 +1,8 @@
 import React from 'react'
 import logo from '../Images/logo-bg.png'
 import '../Styles/Navmoudul.css'
-import Account from './Account'
+import Account from './Account';
+import {Link} from "react-router-dom";
 
 export default function Nav() {
   return (
@@ -9,10 +10,10 @@ export default function Nav() {
  <nav className="nav">
     <ul>
       <li>
-        <a href="index.html" className="brand">
+        <Link to="/" className="brand">
           <img src={logo} alt="Learn with Sumit Logo" />
           <h3>Learn with Sumit</h3>
-        </a>
+        </Link>
       </li>
     </ul>
     <Account/>
